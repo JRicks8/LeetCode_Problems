@@ -15,15 +15,12 @@ package neetcode.arrays_hashing;
     s and t consist of lowercase English letters.
 */
 
-import java.util.Map;
-import java.util.HashMap;
-
-class Solution {
+class ValidAnagram {
     public boolean isAnagram(String s, String t) {
         if (s.length() != t.length()) return false;
         int[] arr = new int[26];
-        s.chars().forEach(c -> arr[c]++);
-        t.chars().forEach(c -> arr[c]--);
+        s.chars().forEach(c -> arr[c - 97]++);
+        t.chars().forEach(c -> arr[c - 97]--);
         for (int n : arr) {
             if (n != 0) {
                 return false;

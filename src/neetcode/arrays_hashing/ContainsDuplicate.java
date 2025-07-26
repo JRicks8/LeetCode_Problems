@@ -15,7 +15,7 @@ package neetcode.arrays_hashing;
 import java.util.HashSet;
 import java.util.Set;
 
-class Solution {
+class ContainsDuplicate {
     public boolean hasDuplicate(int[] nums) {
         Set<Integer> numSet = new HashSet<>();
         for (int n : nums) {
