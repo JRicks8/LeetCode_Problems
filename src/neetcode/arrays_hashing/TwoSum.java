@@ -65,7 +65,6 @@ private boolean visit(int[] nums, int target, int sum, int currentInd, ArrayList
 }
  */
 
-import java.util.Arrays;
 import java.util.HashMap;
 
 public class TwoSum {
